@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #profilepic {
+            border: 1px solid black;
+            border-radius: 50%;
+        }
+
+        body {
+            width: 97%;
+            background-color: #e3e5e8;
+        }
+
+        .left {
+            float: left;
+            width: 47%;
+        }
+
+        .right {
+            float: right;
+            width: 47%;
+            margin-right: 10px;
+        }
+
+        .multi-box {
+            display: inline-block;
+            width: 100%;
+
+        }
+
+        input {
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 5px;
+            margin-top: 3px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Profile</h3>
+
+    <form action="#">
+        <div>
+            <center><img
+                    src="https://lh3.googleusercontent.com/ogw/ADea4I5p_GXu0xcS0hPkrIldWDUa_pirPskIAvcxCz8D=s83-c-mo"
+                    id="profilepic"></center>
+        </div>
+
+        <div class="multi-box">
+            <div class="left">
+                Name <br> <input type="text">
+            </div>
+
+            <div class="right">
+                Email <br> <input type="text">
+            </div>
+        </div>
+        <br>
+
+        <div class="multi-box">
+            <div class="left">
+                Company <br> <input type="text">
+            </div>
+
+            <div class="right">Designation <br> <input type="text">
+            </div>
+        </div>
+        <br>
+
+        <div class="multi-box">
+            <div class="left">
+                Phone Number <br> <input type="text">
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <label for="Topics">Topics</label><br>
+                <select class="multi-box"
+                    style="height: 30px; border-radius: 5px; border: 1px solid black;margin-top: 3px; padding:5px;">
+                    <option value="topic1">Precision Medicine,Healthcare</option>
+                    <option value="topic2">Covid-19,Healthcare</option>
+                </select>
+            </div>
+        </div>
+        <div style="margin-top: 10px;">
+            Description <br>
+            <textarea name="mytext" cols="130" rows="10"
+                style="border: 1px solid black; border-radius: 5px;padding:5px;margin-top:3px;"></textarea>
+        </div>
+        <div class="multi-box" style="margin-top: 10px;">
+            <input class="right" style="width:20%;" type="submit" value="Save">
+            <input class="right" style="width: 20%;" type="reset" value="Cancel">
+        </div>
+
+    </form>
+
+
+</body>
+
+</html>
